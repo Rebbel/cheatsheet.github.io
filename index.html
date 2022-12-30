@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Academy - Cheatsheet project</title>
+    <link href="index.css" rel="stylesheet">
+</head>
+<body>
+
+    <h1>CSS Properties</h1>
+    <table>
+       <thead>
+            <tr>
+                <th id="prop_name">Prop. Name</th>
+                <th id="prop_syn">Prop. Syntax</th>
+                <th id="prop_value">Values</th>
+                <th id="prop_desc">Prop. Description</th>
+            </tr>
+       </thead>
+       <tbody>
+            <!--Box Model Properties-->
+            <tr class="divider"> 
+                <td colspan="4"><p>Box Model CSS Properties - Height/WIdth, Border, Padding, Margin, etc</p></td>
+            </tr>
+            <tr>
+                <td>Height/Width</td>
+                <td>Width: <span class="values">number value</span>;/ height: <span class="value">number value</span>;</td>
+                <td>px, rem, or em</td>
+                <td>Setting the dimensions of the container</td>
+            </tr>
+            
+            <tr>
+                <td>Border</td>
+                <td>border:<span>1px solid blue</span>;</td>
+                <td>(1)Width of border <br>(2)Line style<br>(3)Line color</td>
+                <td>The division between the container and the content outside the container</td>
+                <tr>
+                    <td>+ Border Radius</td>
+                    <td>border-radius: <span class="value">value</span>;</td>
+                    <td>px</td>
+                    <td>Allows the modification of the corner of the element to become more curvedT</td>
+                </tr>
+            </tr>
+            <tr>
+                <td>Padding</td>
+                <td>padding: <span class="value">number value</span>;</td>
+                <td>px, or % (percentage)</td>
+                <td>Creating space between the content and the border of the container</td>
+            </tr>
+            <tr>
+                <td>Margin</td>
+                <td>margin: <span class="value">number value</span></td>
+                <td>px or % (percentage)</td>
+                <td>The spacing between the border and the content outside the container</td>
+            </tr>
+            <tr>
+                <td>Overflow</td>
+                <td>overflow:<span class="value">value;</span></td>
+                <td>Hidden, Scroll, or Visible</td>
+                <td>Overflow, helps to describe on what to do with the content that cannot be contained within the container</td>
+            </tr>
+            <tr>
+                <td>Box-Sizing</td>
+                <td>Box-sizing:<span class="value">value</span>;</td>
+                <td>border-box</td>
+                <td>Box-sizing, controls the type of box model the browser should use when interpreting a web page</td>
+            </tr>
+
+            <!--FlexBox Properties-->
+            <tr class="divider"> 
+                <td colspan="4"><p>Flex Box CSS Properties</p></td>
+            </tr>
+            <tr>
+                <td>Display</td>
+                <td>display: <span class="value">value</span>;</td>
+                <td>Block, Inline-block, float, clear, etc <br> <a href="https://www.freecodecamp.org/news/the-css-display-property-display-none-display-table-inline-block-and-more/#:~:text=The%20display%20property%20takes%20many,to%20use%20the%20display%20property." target="_blank">(More Info)</a></td>
+                <td>Setting the element as a blck or Inline-block - is determining if the elements should be considered their own element or next to others</td>
+            </tr>
+            <tr>
+                <td>Justify Content</td>
+                <td>justify-content:<span>value</span>;</td>
+                <td>flex-start, flex-end, center, space-around, space-between, etc.</td>
+                <td>Change the position of the content that is being flex (aka elements within a container) - altering the position horizonally<br><a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content#:~:text=The%20CSS%20justify%2Dcontent%20property,axis%20of%20a%20grid%20container.">(More info)</a></td>
+            </tr>
+            <tr>
+                <td>Align Items</td>
+                <td>align-items: <span class="value">value</span>;</td>
+                <td>Stretch, center, start, end, etc</td>
+                <td>Control the alignment of the itms, in the container, vertically<br> <a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/align-items">(More Info)</a></td>
+            </tr>
+            <tr>
+                <td>Align-content</td>
+                <td>align-content:<span class="value"></span></td>
+                <td>Prop. Value(s)</td>
+                <td>Description</td>
+            </tr>
+            <tr>
+                <td>Flex</td>
+                <td>flex: <span class="value">(1)Grow (2)Shrink (3)Flex-Basis</span>;</td>
+                <td>
+                    <ul class="list_value">
+                        <li>1:<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow">flex-grow</a></li>
+                        <li>2:<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink">flex-shrink</a></li>
+                        <li>3:<a target="_blank" href="https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis">Flex-basis</a></li>
+                    </ul>
+                </td>
+                <td>sets how a flex item will grow or shrink to fit the space available in its flex container</td>
+            </tr>
+            <tr>
+                <td>Flex Wrap</td>
+                <td>flex-wrap:<span class="value"> value</span>;</td>
+                <td>
+                    <ul class="list_value">
+                        <li>wrap</li>
+                        <li>wrap-reverse</li>
+                        <li>no-wrap</li>
+                    </ul>
+                </td>
+                <td>letting the content start a new line instead of shrinking or growing when the page size changes </td>
+            </tr>
+            <tr>
+                <td>flex Direction</td>
+                <td>flex-direction: <span>value</span>;</td>
+                <td>
+                    <ul class="list_value">
+                        <li>row</li>
+                        <li>row-reverse</li>
+                        <li>column</li>
+                        <li>column-reverse</li>
+                    </ul>
+                </td>
+                <td>Displaying how the items in the flex container will be displayed. The values explain the direction that the items will be displayed</td>
+            </tr>
+       </tbody>
+       <tfoot>
+        <tr>
+            <td colspan="4"> Created By: Justin Anderson <br><span id="desc">Rough Draft - Code Academy Project</span></td>
+        </tr>
+       </tfoot>
+    </table>
+</body>
+</html>
